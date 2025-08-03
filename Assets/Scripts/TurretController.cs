@@ -46,6 +46,7 @@ public class TurretController : MonoBehaviour
             Vector3 localDir = _barrelPivot.InverseTransformDirection(directionToTarget.normalized);
             float elevationAngle = Mathf.Atan2(localDir.y, localDir.z) * Mathf.Rad2Deg;
             elevationAngle = Mathf.Clamp(elevationAngle, _minElevation, _maxElevation);
+
             float newAngleX = elevationAngle < 0 ? 360f + elevationAngle : elevationAngle;
             Vector3 currentLocalAngles = _barrelPivot.localEulerAngles;
             currentLocalAngles.x = Mathf.LerpAngle(currentLocalAngles.x, newAngleX, Time.deltaTime * _rotationSpeed);

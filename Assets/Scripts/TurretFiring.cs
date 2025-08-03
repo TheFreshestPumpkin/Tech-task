@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class TurretShooter : MonoBehaviour
 {
-    [Header("")]
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private Transform _firePoint;
     [SerializeField] private float _bulletSpeed = 50f;
