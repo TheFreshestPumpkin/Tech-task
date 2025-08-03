@@ -39,7 +39,6 @@ public class EnemyHelicopter : MonoBehaviour
         if (isDestroyed) return;
         isDestroyed = true;
 
-        // Отсоединяем части и включаем физику
         ActivatePartPhysics(_cabin);
         ActivatePartPhysics(_topRotor);
         ActivatePartPhysics(_tailRotor);

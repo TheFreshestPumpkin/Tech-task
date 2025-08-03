@@ -638,7 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 592684942}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1743,7 +1743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2823587197348254914, guid: 6b8d7bf0f403a3048823ac6d1b6b50f1, type: 3}
       propertyPath: m_Name
-      value: ATV_N1_Color_0_Prefab
+      value: FlakCar
       objectReference: {fileID: 0}
     - target: {fileID: 3198880870433345144, guid: 6b8d7bf0f403a3048823ac6d1b6b50f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2259,7 +2259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045450684}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: AttackPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

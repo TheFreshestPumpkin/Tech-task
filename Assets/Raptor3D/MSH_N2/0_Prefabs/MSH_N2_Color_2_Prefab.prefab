@@ -454,6 +454,7 @@ MonoBehaviour:
   _cabin: {fileID: 2345951187946226238}
   _topRotor: {fileID: 1149529708122598419}
   _tailRotor: {fileID: 7579129374407068758}
+  _explosionPref: {fileID: 0}
 --- !u!114 &5482939405397861983
 MonoBehaviour:
   m_ObjectHideFlags: 0
