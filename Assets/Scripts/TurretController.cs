@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class TurretController : MonoBehaviour
 {
-    [SerializeField] private Transform _turretPivot;   //по Y
-    [SerializeField] private Transform _barrelPivot;   //по X
+    [SerializeField] private Transform _turretPivot;   // по Y
+    [SerializeField] private Transform _barrelPivot;   // по X
     [SerializeField] private float _rotationSpeed = 5f;
     [SerializeField] private float _maxElevation = 60f;
-    [SerializeField] private float _minElevation = -5f;
+    [SerializeField] private float _minElevation = -23f;
     [SerializeField] private Camera _cam;
 
     private void Update()
@@ -41,16 +41,16 @@ public class TurretController : MonoBehaviour
                 Quaternion targetRot = Quaternion.LookRotation(flatDirection);
                 _turretPivot.rotation = Quaternion.Slerp(_turretPivot.rotation, targetRot, Time.deltaTime * _rotationSpeed);
             }
+
             Vector3 directionToTarget = targetPoint - _barrelPivot.position;
             Vector3 localDir = _barrelPivot.InverseTransformDirection(directionToTarget.normalized);
             float elevationAngle = Mathf.Atan2(localDir.y, localDir.z) * Mathf.Rad2Deg;
             elevationAngle = Mathf.Clamp(elevationAngle, _minElevation, _maxElevation);
+            float newAngleX = elevationAngle < 0 ? 360f + elevationAngle : elevationAngle;
             Vector3 currentLocalAngles = _barrelPivot.localEulerAngles;
-            currentLocalAngles.x = elevationAngle;
-            if (currentLocalAngles.x < 0f) currentLocalAngles.x += 360f;
+            currentLocalAngles.x = Mathf.LerpAngle(currentLocalAngles.x, newAngleX, Time.deltaTime * _rotationSpeed);
 
             _barrelPivot.localEulerAngles = currentLocalAngles;
-
         }
     }
 }
