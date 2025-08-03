@@ -503,10 +503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd82c42c06222643a76def4eb72c2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretPivot: {fileID: 1740601395}
-  localOffset: {x: 0, y: 8, z: -20}
-  followSpeed: 5
-  rotateSpeed: 5
+  _turretPivot: {fileID: 1740601395}
+  _localOffset: {x: 0, y: 15, z: -45}
+  _followSpeed: 5
+  _rotateSpeed: 5
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,11 +900,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b52b25e5dd9e50488d1f2c11f520fed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2230831009695458513, guid: 022c85d5176a7644eb304f7be9565115, type: 3}
-  firePoint: {fileID: 2001175277}
-  bulletSpeed: 50
-  gravityForce: 0
-  fireRate: 0.1
+  _bulletPrefab: {fileID: 2230831009695458513, guid: 022c85d5176a7644eb304f7be9565115, type: 3}
+  _firePoint: {fileID: 2001175277}
+  _bulletSpeed: 50
+  _gravityForce: 0
+  _fireRate: 0.2
 --- !u!114 &749000398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,12 +917,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417e93df614d88a43bf40f0b0104ed09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretPivot: {fileID: 1740601395}
-  barrelPivot: {fileID: 719932686}
-  rotationSpeed: 5
-  maxElevation: 23
-  minElevation: -23
-  cam: {fileID: 330585545}
+  _turretPivot: {fileID: 1740601395}
+  _barrelPivot: {fileID: 719932686}
+  _rotationSpeed: 5
+  _maxElevation: 60
+  _minElevation: -23
+  _cam: {fileID: 330585545}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,9 +1201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ac78a74bb5c104881d6c7523509763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helicopterPrefab: {fileID: 4421525259197088864, guid: 272d416512362184fb71359171b25191, type: 3}
-  spawnPoint: {fileID: 592684942}
-  hoverTarget: {fileID: 2045450684}
+  _helicopterPrefab: {fileID: 4421525259197088864, guid: 272d416512362184fb71359171b25191, type: 3}
+  _spawnPoint: {fileID: 592684942}
+  _hoverTarget: {fileID: 2045450684}
   _uiPanel: {fileID: 1079782839}
 --- !u!4 &1128953354
 Transform:
