@@ -1542,7 +1542,7 @@ GameObject:
   - component: {fileID: 1297762542}
   - component: {fileID: 1297762541}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2292,7 +2292,7 @@ GameObject:
   - component: {fileID: 2013844227}
   - component: {fileID: 2013844226}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: HelicopterCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2429,7 +2429,7 @@ GameObject:
   - component: {fileID: 2021443997}
   - component: {fileID: 2021443996}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
